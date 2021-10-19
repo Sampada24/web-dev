@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <script>
+          
+            // Function to check Whether both passwords
+            // is same or not.
+            function checkPassword(form) {
+                password1 = form.password1.value;
+                password2 = form.password2.value;
+  
+                 
+                if (password1 != password2) {
+                    alert ("\nPassword did not match: Please try again...")
+                    return false;
+                }
+
+                else{
+                    
+ 
+                    return true;
+                }
+  
+               
+            }
+        </script>
+</head>
+<body style="background-color:lightblue;">
+	<center>
+		<h1> WELCOME TO AMAZON </h1> 
+	</center>
+	<h4 style="margin-left:30px">SIGN UP</h4>
+<form onSubmit = "return checkPassword(this)" action="shoppingcart.html" style="margin-left:30px">
+
+  Enter Firstname: <input type="text" id="username" name="firstname" ><br><br>
+  Enter Lastname: <input type="text" id="username" name="lastname" ><br><br>
+  Enter Email:    <input type="email" id="email" name="email"><br><br>
+  Enter Password: <input type="password" id="password1" name="password1"><br><br>
+  Confirm Password: <input type="password" id="password2" name="password2"><br><br>
+  
+<input type = submit value = "Submit" style="border-radius: 6px;">
+</form>
+
+</body>
+</html>
